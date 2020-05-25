@@ -1,5 +1,7 @@
 #!/bin/sh
 
+/usr/sbin/a2enmod substitute
+
 if [ "$DB_SERVER" = "<to be defined>" -a $PS_INSTALL_AUTO = 1 ]; then
     echo >&2 'error: You requested automatic PrestaShop installation but MySQL server address is not provided '
     echo >&2 '  You need to specify DB_SERVER in order to proceed'
